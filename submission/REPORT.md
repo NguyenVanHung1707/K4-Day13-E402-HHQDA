@@ -4,7 +4,7 @@
 
 - Tên nhóm: Group E402
 - Repository URL: https://github.com/NguyenVanHung1707/K4-Day13-E402-HHQDA.git
-- Commit SHA cuối: 03000d5
+- Commit SHA cuối: 6bd9a79
 - Thành viên và vai trò:
   1. Nguyễn Văn Hưng - 2A202601284 (Role E: QA & Chief Investigator - Trưởng Nhóm)
   2. Phạm Tuấn Anh - 2A202601060 (Role A: API & Middleware Engineer)
