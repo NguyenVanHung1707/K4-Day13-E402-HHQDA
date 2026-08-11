@@ -357,30 +357,31 @@ Toàn bộ file minh chứng phải được đặt trong thư mục [`submissio
 
 Trước khi submit URL repository và Commit SHA, cả nhóm cùng rà soát các lệnh sau:
 
-- [ ] **Kiểm tra Public Tests**:
+- [x] **Kiểm tra Public Tests**:
   ```bash
   python -m pytest -q
   ```
   *(Tất cả tests trong `tests/` phải PASS)*
 
-- [ ] **Kiểm tra Logging & PII Contract**:
+- [x] **Kiểm tra Logging & PII Contract**:
   ```bash
   python scripts/validate_logs.py
   ```
   *(Đạt 100/100, không còn rò rỉ PII)*
 
-- [ ] **Kiểm tra Dashboard Contract**:
+- [x] **Kiểm tra Dashboard Contract**:
   ```bash
   python scripts/validate_dashboard.py
   ```
   *(Trả về `HỢP LỆ: 6/6 panel`)*
 
-- [ ] **Kiểm tra An Toàn Git & Security**:
+- [x] **Kiểm tra An Toàn Git & Security**:
   ```bash
   git status --short
   ```
   *(Đảm bảo không có `.env`, API key, `.venv/` hoặc log chứa PII bị staging)*
 
-- [ ] **Kiểm tra File Báo Cáo**:
+- [x] **Kiểm tra File Báo Cáo**:
   - File [`submission/REPORT.md`](file:///e:/hung/VinAI/Lab/Lab13/K4-Day13-E402-HHQDA/submission/REPORT.md) đã điền đầy đủ 7 mục, không còn để trống.
   - Bảng đóng góp cá nhân tại Mục 7 đã có đầy đủ link Commit/PR cho cả 5 thành viên.
+
