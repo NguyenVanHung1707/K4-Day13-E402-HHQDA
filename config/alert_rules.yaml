@@ -1,19 +1,20 @@
 alerts:
-  - name: TODO_alert_1
-    severity: TODO
-    condition: TODO
+  - name: HighLatencyP95
+    severity: warning
+    condition: P95 latency > 3000ms for 5m
     type: symptom-based
-    owner: TODO
+    owner: SRE & Alerts Engineer
     runbook: docs/alerts.md#alert-1
-  - name: TODO_alert_2
-    severity: TODO
-    condition: TODO
+  - name: HighErrorRate
+    severity: critical
+    condition: Error rate > 2% for 3m
     type: symptom-based
-    owner: TODO
+    owner: SRE & Alerts Engineer
     runbook: docs/alerts.md#alert-2
-  - name: TODO_alert_3
-    severity: TODO
-    condition: TODO
+  - name: CostSpike
+    severity: warning
+    condition: Average cost per request > 3x baseline for 5m
     type: symptom-based
-    owner: TODO
+    owner: SRE & Alerts Engineer
     runbook: docs/alerts.md#alert-3
+
