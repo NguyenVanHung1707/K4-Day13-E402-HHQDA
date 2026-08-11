@@ -14,15 +14,15 @@
 
 ## 2. Kết quả kỹ thuật
 
-- Điểm `validate_logs.py`: 100/100 (Baseline CP0)
+- Điểm `validate_logs.py`: 100/100 (QA nghiệm thu CP1 - 0 PII leak, 100% correlation IDs)
 - Tổng số traces: 10
 - Số PII leak còn lại: 0
 - Link/đường dẫn dashboard:
 
 ## 3. Logging và tracing
 
-- Evidence correlation ID:
-- Evidence PII redaction:
+- Evidence correlation ID: submission/evidence/validate_logs_result.txt
+- Evidence PII redaction: submission/evidence/validate_logs_result.txt (0 potential PII leaks)
 - Evidence trace waterfall:
 - Giải thích một span đáng chú ý:
 
@@ -57,5 +57,6 @@ Với mỗi thành viên, ghi rõ nhiệm vụ và link commit/PR tương ứng.
 
 | Thành viên | Phần việc | Commit/PR | Điều đã học |
 |---|---|---|---|
-| Nguyễn Văn Hưng (Role E - 2A202601284) | CP0: Khởi tạo môi trường, Langfuse Cloud setup, chạy baseline load test & log validation (100/100), cập nhật báo cáo CP0 | https://github.com/NguyenVanHung1707/K4-Day13-E402-HHQDA/commit/e8d8346 | Cách thiết lập observability baseline, kiểm tra logs schema & correlation ID |
+| Nguyễn Văn Hưng (Role E - 2A202601284) | CP0: Khởi tạo môi trường, Langfuse Cloud setup, chạy baseline load test & log validation. CP1: Nghiệm thu QA logging & PII redaction (100/100), lưu evidence validate_logs_result.txt, chuẩn bị prompt setup CP2. | https://github.com/NguyenVanHung1707/K4-Day13-E402-HHQDA/commit/d9381e2 | Quy trình QA nghiệm thu log contract, correlation ID propagation và PII scrubbing validation |
+
 
